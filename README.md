@@ -1,11 +1,26 @@
-<!DOCTYPE html>
+# 🌿 IA para o Meio Ambiente — Fluxograma Interativo
+
+Este projeto apresenta um site interativo com um fluxograma que ilustra como a **Inteligência Artificial (IA)** pode ser aplicada para resolver problemas ambientais e promover a sustentabilidade.
+
+## 🚀 Como visualizar o projeto
+
+1. Faça o clone do repositório ou baixe os arquivos.
+2. Abra o arquivo `index.html` no seu navegador.
+3. Ou ative o **GitHub Pages** nas configurações do repositório (`Settings > Pages`) para publicar o site online gratuitamente.
+
+## 🛠️ Tecnologias Utilizadas
+
+* **HTML5**
+* **CSS3** (com variáveis e design responsivo)
+* **Mermaid.js** (biblioteca para renderização de diagramas e fluxogramas)
+* <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>IA no Meio Ambiente - Fluxograma</title>
-  
-  <!-- Importação da biblioteca Mermaid.js para o fluxograma -->
+  <link rel="stylesheet" href="style.css" />
+  <!-- Importação do Mermaid.js para o fluxograma -->
   <script type="module">
     import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.mmin.mjs';
     mermaid.initialize({ 
@@ -14,100 +29,6 @@
       flowchart: { curve: 'basis' }
     });
   </script>
-
-  <!-- Estilos CSS unificados -->
-  <style>
-    :root {
-      --primary: #2d6a4f;
-      --secondary: #52b788;
-      --background: #f4f9f4;
-      --card-bg: #ffffff;
-      --text: #1b4332;
-    }
-
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    }
-
-    body {
-      background-color: var(--background);
-      color: var(--text);
-      display: flex;
-      flex-direction: column;
-      min-height: 100vh;
-    }
-
-    header {
-      background-color: var(--primary);
-      color: white;
-      text-align: center;
-      padding: 2.5rem 1rem;
-    }
-
-    header h1 {
-      font-size: 2.2rem;
-      margin-bottom: 0.5rem;
-    }
-
-    header p {
-      font-size: 1.1rem;
-      opacity: 0.9;
-    }
-
-    .container {
-      max-width: 1100px;
-      margin: 2rem auto;
-      padding: 0 1rem;
-      flex: 1;
-    }
-
-    .card {
-      background: var(--card-bg);
-      border-radius: 12px;
-      padding: 1.5rem;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-      margin-bottom: 2rem;
-    }
-
-    .flowchart-card {
-      text-align: center;
-      overflow-x: auto;
-    }
-
-    .flowchart-card h2 {
-      margin-bottom: 1.5rem;
-      color: var(--primary);
-    }
-
-    .grid-details {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-      gap: 1.5rem;
-    }
-
-    .grid-details .card h3 {
-      color: var(--primary);
-      margin-bottom: 0.5rem;
-    }
-
-    .grid-details .card p {
-      color: #555;
-      line-height: 1.5;
-      font-size: 0.95rem;
-    }
-
-    footer {
-      text-align: center;
-      padding: 1.5rem;
-      background-color: var(--primary);
-      color: white;
-      font-size: 0.9rem;
-      margin-top: auto;
-    }
-  </style>
 </head>
 <body>
 
@@ -168,8 +89,99 @@
   </main>
 
   <footer>
-    <p>Projeto em arquivo único • HTML, CSS e JS unificados</p>
+    <p>Projeto Open Source para o GitHub • Desenvolvido com HTML, CSS e Mermaid.js</p>
   </footer>
 
 </body>
 </html>
+:root {
+  --primary: #2d6a4f;
+  --secondary: #52b788;
+  --background: #f4f9f4;
+  --card-bg: #ffffff;
+  --text: #1b4332;
+  --text-light: #40916c;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--text);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header {
+  background-color: var(--primary);
+  color: white;
+  text-align: center;
+  padding: 2.5rem 1rem;
+}
+
+header h1 {
+  font-size: 2.2rem;
+  margin-bottom: 0.5rem;
+}
+
+header p {
+  font-size: 1.1rem;
+  opacity: 0.9;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+  flex: 1;
+}
+
+.card {
+  background: var(--card-bg);
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  margin-bottom: 2rem;
+}
+
+.flowchart-card {
+  text-align: center;
+  overflow-x: auto;
+}
+
+.flowchart-card h2 {
+  margin-bottom: 1.5rem;
+  color: var(--primary);
+}
+
+.grid-details {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.5rem;
+}
+
+.grid-details .card h3 {
+  color: var(--primary);
+  margin-bottom: 0.5rem;
+}
+
+.grid-details .card p {
+  color: #555;
+  line-height: 1.5;
+  font-size: 0.95rem;
+}
+
+footer {
+  text-align: center;
+  padding: 1.5rem;
+  background-color: var(--primary);
+  color: white;
+  font-size: 0.9rem;
+  margin-top: auto;
+}
